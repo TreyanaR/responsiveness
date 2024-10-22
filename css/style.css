@@ -71,6 +71,8 @@ img{
 	/* Make this a two column grid. */
 	.grid{
 
+		grid-template-columns: 1fr 1fr;
+
 
 		
 		/* Play with: */
@@ -83,14 +85,14 @@ img{
 
  	.item1{
  		 /* Span the entire first row  */
-		
+		grid-column: 1/3;
 		  /* grid-column: ; */
  	}
-	
+	 
 	.item2{
 		/* Start in row 2 and span 3 rows */
 		/* grid-row:; */
-
+grid-row: 2/5;
 	}
 
 }
@@ -101,16 +103,27 @@ img{
 
 	/* Make this a three column grid using fr. */
 	.grid{
+		grid-template-columns: 1fr 1fr 1fr;
 
 		/* Why don't we bother with justify here? */
 	}
 	.item3{
 		/* Start in row 2 and span two rows 
+	
 		   Start in column 2 and span two columns */
+		   grid-column: 2/4;
+		   grid-row: 2/4;
+		   
 
 
 		/* What happens if you try to span 3 columns */
 	}
 
-	
+	.item4{
+		grid-column: 2/3;
+	}
+
+	.item1{
+		grid-column: 1/4;
+	}
 }
